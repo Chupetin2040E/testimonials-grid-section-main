@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.main {
+    display: flex;
+    margin: 7% 15%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.top, .bottom {
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+
+[class|="one"], [class|="two"], section.side {
+    /*height: auto;*/
+    box-sizing: border-box;
+}
+
+
+div.persona {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+div.foto-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.foto-perfil img {
+    border-radius: 50%;
+}
+
+div.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.name, p.graduate {
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    flex: 1;
+}
+
+div.container-quotes {
+    position: relative;
+}
+
+img.quotes {
+    position: absolute;
+    right: 3em;
+    width: 10em;
+    top: -2em;
+    z-index: 0;
+}
+
+
+
+section.one-largue  h2 {
+    position: relative;
+}
+
+
+.one-largue, .one-short {
+    font-size: 13px;
+}
+
+.one-largue {
+    background-color: hsl(263, 55%, 52%);
+    /*width: 50%;*/
+}
+
+.one-short {
+    background-color: hsl(217, 19%, 35%);
+    /*width: 25%;*/
+}
+
+section.one-largue div.persona img {
+    border: 3px solid hsla(0, 0%, 81%, 0.5);
+}
+
+
+
+.bottom {
+    display: flex;
+    flex: 1;
+}
+.two-short, .two-largue {
+    font-size: 13px;
+}
+
+.two-short {
+    background-color: #fff;
+    /*width: 25%;*/
+}
+
+.two-largue {
+    background-color: hsl(219, 29%, 14%);
+    /*width: 50%;*/
+}
+
+section.two-largue img {
+    border: 3px solid hsla(263, 55%, 52%, 0.5);
+}
+
+
+
+
+
+div.side {
+    display: flex;
+    width: 25%;
+}
+
+section.side {
+    font-size: 13px; 
+    background-color: #fff;
+    width: 100%;
+    float: right;
+
+}
+
+
+
+[class|="one"], [class|="two"], section.side { 
+    margin: 1em;
+    padding: 2em 3em;
+    border-radius: 13px;
+
+}
+
+
+
+.one-largue, .one-short, .two-largue {
+   color: hsl(0, 0%, 81%);
+}
+
+.one-largue .graduate, .one-short .graduate, .two-largue .graduate {
+    opacity: .5;
+}
+
+.one-largue .info, .one-short .info, .two-largue .info {
+    opacity: .7;
+}
+
+
+section.side, .two-short {  
+     color:  hsl(217, 19%, 35%);
+
+}
+
+section.side .graduate, .two-short .graduate {
+    opacity: .5;
+}
+
+section.side .info, .two-short .info {
+    opacity: .7;
+}
+
+
+
+.info {
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+
+div.name {
+    margin-left: 2em;
+}
+
+
+.attribution {
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+.attribution a{
+    text-decoration: none;
+    
+}
+
+.attribution a:hover {
+    color: #f23;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .main {
+        margin: 3%;
+        flex-direction: column;
+    }
+    .left, .top, .bottom {
+        display: block;
+    }
+    div.side {
+        width: 100%;
+    }
+    img.quotes {
+        position: absolute;
+        width: 9em;
+        top: -2em;
+        right: 0;
+        z-index: 0;
+    }
+    div.foto-perfil {
+        width: 3em;
+    }
+}
